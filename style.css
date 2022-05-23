@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #181818;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  background-color: #181818;
+  justify-content: space-between;
+  height: 100px;
+  margin-right: 20px;
+  align-items: center;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+nav ul li a:hover {
+  opacity: 0.4;
+}
+
+.logo img {
+  width: 65px;
+  margin-left: 35px;
+}
+
+.carousel img {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  filter: blur(2px);
+  z-index: -2;
+}
+
+.jumbo h4 {
+  position: absolute;
+  text-align: center;
+  top: 500px;
+  left: 100px;
+  right: 100px;
+  color: white;
+  font-size: 60px;
+  z-index: 2;
+  text-shadow: 1px 1px #181818;
+}
+
+.menu {
+  display: grid;
+}
+
+.menu .bg {
+  background-image: url(img/vr6.jpg);
+  height: 75px;
+  opacity: 0.1;
+  margin-top: 15px;
+  background-position: top;
+  background-size: cover;
+}
+
+.menu .text1 {
+  position: absolute;
+  top: 1020px;
+  left: 35%;
+  font-size: 40px;
+  color: white;
+}
+
+.menus img {
+  width: 100%;
+  cursor: pointer;
+  align-self: center;
+}
+
+.menu .menus h4 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.menu .menus p {
+  text-align: center;
+}
+
+.menu .menus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "main1" "main2" "main3";
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.menu .menus .main1 {
+  grid-template: "main1";
+}
+
+.menu .menus .main2 {
+  grid-template: "main2";
+}
+
+.menu .menus .main3 {
+  grid-template: "main3";
+}
+
+.vr {
+  margin-top: 50px;
+  color: white;
+}
+.vr h4 {
+  position: absolute;
+  top: 1510px;
+  left: 750px;
+  font-size: 60px;
+}
+.vr img {
+  width: 50%;
+  opacity: 0.6;
+  cursor: pointer;
+  filter: blur(2px);
+}
+
+.vr p {
+  font-size: 25px;
+  position: absolute;
+  top: 1580px;
+  left: 700px;
+}
+
+.netflix {
+  display: grid;
+  margin-top: 50px;
+  color: white;
+}
+.netflix h4 {
+  margin-left: 150px;
+  font-size: 60px;
+}
+.netflix p {
+  font-size: 25px;
+  width: 45%;
+  margin-left: 10px;
+}
+.netflix img {
+  position: absolute;
+  left: 630px;
+  height: 70%;
+  width: 50%;
+  margin-top: 12px;
+  opacity: 0.6;
+  cursor: pointer;
+  filter: blur(2px);
+}
+
+.seemore button {
+  display: block;
+  cursor: pointer;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 7px;
+  transition: 0.5s;
+  border: none;
+}
+
+.seemore h4 {
+  text-shadow: 1px 1px rgb(255, 255, 255);
+  font-size: 30px;
+  color: #181818;
+}
+
+.about .banner {
+  margin-top: 100px;
+  width: 100%;
+  height: 75px;
+  background-position: center;
+  opacity: 0.3;
+  background-image: url(img/tahoma1.jpg);
+  position: relative;
+}
+
+.about .us {
+  position: absolute;
+  top: 2735px;
+  left: 500px;
+  font-size: 40px;
+  color: white;
+}
+
+.about img {
+  width: 75%;
+  height: 20%;
+  opacity: 0.7;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.about p {
+  margin-top: 50px;
+  color: white;
+  font-size: 25px;
+  width: 75%;
+  text-align: center;
+  margin-left: 150px;
+}
+
+.contact {
+  margin-top: 25px;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  width: 50px;
+  height: 28px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+  z-index: 3;
+}
+
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(-180deg);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-180deg);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.contact {
+  margin-top: 50px;
+  height: 250px;
+  text-align: center;
+  font-size: 35px;
+  background-color: #222121;
+}
+.icon {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 50px;
+}
+
+.icon a {
+  color: white;
+}
+/* Responsive Break */
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+  nav ul li a {
+    font-size: 0.9em;
+  }
+  .carousel h4 {
+    font-size: 30px;
+    top: 350px;
+  }
+  .menu .text1 {
+    left: 32%;
+    top: 700px;
+    font-size: 30px;
+  }
+  .seemore button {
+    width: 20%;
+    opacity: 0.8;
+  }
+  .vr h4 {
+    left: 425px;
+    top: 1075px;
+    font-size: 35px;
+  }
+  .vr p {
+    left: 425px;
+    top: 1115px;
+    font-size: 17px;
+    margin-right: 15px;
+  }
+  .netflix h4 {
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 35px;
+  }
+  .netflix p {
+    font-size: 17px;
+  }
+  .netflix img {
+    top: 1500px;
+    left: 400px;
+    height: 60%;
+  }
+  .about .us {
+    left: 300px;
+    top: 1900px;
+    font-size: 25px;
+  }
+  .about p {
+    margin-left: 90px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181818;
+    z-index: 3;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .jumbo h4 {
+    text-shadow: 1px 1px #181818;
+    z-index: 2;
+    top: 250px;
+    font-size: 20px;
+  }
+  .seemore button {
+    width: 30%;
+  }
+  .menu .text1 {
+    font-size: 20px;
+    top: 485px;
+  }
+  .vr h4 {
+    font-size: 20px;
+    left: 60%;
+    top: 770px;
+  }
+  .vr p {
+    font-size: 10px;
+    left: 55%;
+    top: 800px;
+  }
+
+  .netflix h4 {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+  .netflix p {
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .netflix img {
+    top: 1070px;
+    width: 50%;
+    height: 47%;
+    left: 50%;
+  }
+  .about .us {
+    top: 1460px;
+    left: 35%;
+    font-size: 20px;
+  }
+  .about p {
+    font-size: 12px;
+    margin-left: 70px;
+  }
+  .menu .menus h4 {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+  }
+  .seemore button {
+    width: 30%;
+  }
+  .seemore h4 {
+    text-shadow: 0px 0px rgb(255, 255, 255);
+    font-size: 15px;
+  }
+  .contact {
+    background-color: #181818;
+    height: 150px;
+  }
+  .contact h4 {
+    font-size: 25px;
+  }
+  .icon {
+    margin-top: 20px;
+    font-size: 35px;
+  }
+}

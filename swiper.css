@@ -1,0 +1,41 @@
+.swiper {
+  cursor: pointer;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+}
+.swiper img {
+  z-index: -1;
+  width: 100%;
+  height: 25%;
+  filter: blur(2px);
+}
+.swiper-slide {
+  z-index: -1;
+  transition: all 5s;
+  text-align: center;
+  font-size: 18px;
+  background: #181818;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
