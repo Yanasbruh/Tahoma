@@ -131,6 +131,7 @@ nav ul li a:hover {
 }
 .vr img {
   width: 50%;
+  height: 350px;
   opacity: 0.6;
   cursor: pointer;
   filter: blur(2px);
@@ -160,7 +161,7 @@ nav ul li a:hover {
 .netflix img {
   position: absolute;
   left: 630px;
-  height: 70%;
+  height: 60%;
   width: 50%;
   margin-top: 12px;
   opacity: 0.6;
@@ -196,7 +197,7 @@ nav ul li a:hover {
 
 .about .us {
   position: absolute;
-  top: 2735px;
+  top: 2365px;
   left: 500px;
   font-size: 40px;
   color: white;
@@ -308,7 +309,7 @@ nav ul li a:hover {
     top: 350px;
   }
   .menu .text1 {
-    left: 32%;
+    left: 100px;
     top: 700px;
     font-size: 30px;
   }
@@ -379,25 +380,33 @@ nav ul li a:hover {
   .jumbo h4 {
     text-shadow: 1px 1px #181818;
     z-index: 2;
-    top: 250px;
-    font-size: 20px;
+    top: 190px;
+    font-size: 12px;
+    font-weight: 800;
   }
   .seemore button {
     width: 30%;
   }
   .menu .text1 {
     font-size: 20px;
-    top: 485px;
+    top: 410px;
   }
   .vr h4 {
     font-size: 20px;
     left: 60%;
-    top: 770px;
+    top: 680px;
+  }
+  .vr img {
+    width: 50%;
+    height: 200px;
+    opacity: 0.6;
+    cursor: pointer;
+    filter: blur(2px);
   }
   .vr p {
     font-size: 10px;
     left: 55%;
-    top: 800px;
+    top: 710px;
   }
 
   .netflix h4 {
@@ -409,22 +418,22 @@ nav ul li a:hover {
   .netflix p {
     margin-left: 5px;
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 10px;
   }
   .netflix img {
-    top: 1070px;
+    top: 935px;
     width: 50%;
-    height: 47%;
+    height: 200px;
     left: 50%;
   }
   .about .us {
-    top: 1460px;
+    top: 1260px;
     left: 35%;
     font-size: 20px;
   }
   .about p {
     font-size: 12px;
-    margin-left: 70px;
+    margin-left: 50px;
   }
   .menu .menus h4 {
     font-size: 15px;
@@ -432,9 +441,12 @@ nav ul li a:hover {
     text-align: center;
   }
   .seemore button {
-    width: 30%;
+    width: 40%;
+    height: 20px;
+    background: url(img/tahoma1.jpg);
   }
   .seemore h4 {
+    color: white;
     text-shadow: 0px 0px rgb(255, 255, 255);
     font-size: 15px;
   }
